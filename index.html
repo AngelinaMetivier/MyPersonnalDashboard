@@ -5,108 +5,119 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css"/>
-  <title>My New Project</title>
+
+  <title>My Personnal Dashboard</title>
 
   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Cinzel:wght@400..900&family=Gravitas+One&family=Limelight&family=Pacifico&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 
   <!-- SYMBOLS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
   
 </head> 
   
 <body>
-  <div class="main-layout">
-    
-    <nav class="navigation">
-      <ul class="parts">
+  
+    <main>
+
+<!-- NAVIGATION -->
+  <div class="navigation">
+    <nav>
+      <ul>
         <li>
           <a id="homepage" href="#welcome"><span class="material-symbols-outlined">arrow_forward</span>Homepage</a>
         </li>
         <li>
           <a id="profile" href="#visitcard"><span class="material-symbols-outlined">arrow_forward</span>Profile</a>
-         </li>
-         <li>
-           <a id="statistics" href="#"><span class="material-symbols-outlined">arrow_forward</span> ... coming soon</a>
-         </li>
-         <li>
-           <a id="parameters" href="#"><span class="material-symbols-outlined">arrow_forward</span>... coming soon</a>
-         </li>
-       </ul>
-     </nav>
-    
-    <div class="content">
-      <header class="header">
-        <h1>My Personnal Dashboard</h1>
-      </header>
- 
-  <main>
+        </li>
+        <li>
+          <a id="statistics" href="#"><span class="material-symbols-outlined">arrow_forward</span> ... coming soon</a>
+        </li>
+        <li>
+          <a id="parameters" href="#"><span class="material-symbols-outlined">arrow_forward</span>... coming soon</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+<!-- /NAVIGATION -->
 
-    <div id="welcome">
-      <h2>Welcome in!</h2>
+<!-- HEADER -->
+  <header>
+    <div class="header">
+      <h1>My Personnal Dashboard</h1>
     </div>
+  </header>
+<!-- /HEADER -->
 
-      <div class="cards">
+  <div class="main-layout"> 
 
-          <div class="card card-one">
-            <form id="to-do-list">
-              <fieldset class="list">
-                <legend>To-Do List :</legend>
-                  <label>
-                    <input type="checkbox" id="to-do">
-                    <input type="text" id="item">
-                  </label>
-                  <label>
-                    <input type="checkbox" id="to-do">
-                    <input type="text" id="item">
-                  </label>
-                  <label>
-                    <input type="checkbox" id="to-do">
-                    <input type="text" id="item">
-                  </label>
-                  <label>
-                    <input type="checkbox" id="to-do">
-                    <input type="text" id="item">
-                  </label>
-                  <label>
-                    <input type="checkbox" id="to-do">
-                   <input type="text" id="item">
-                  </label>           
-               </fieldset>
-            </form>
-          </div>
-      
-          <div class="card">
-              <!-- widget meteo -->
-              <div id="widget_29880406cabd5189048741950d2895e0">
-              <span id="t_29880406cabd5189048741950d2895e0">Météo Bain-de-Bretagne</span>
-              <span id="l_29880406cabd5189048741950d2895e0"><a href="http://www.mymeteo.info/r/accueil_Cma">My-Meteo.com</a></span>
-              <script type="text/javascript">
-              (function() {
-              var my = document.createElement("script"); my.type = "text/javascript"; my.async = true;
-              my.src = "https://services.my-meteo.com/widget/js?ville=13397&format=carre&nb_jours=3&temps&horaires&hum&precip&coins&c1=5f5f5f&c2=145787&c3=transparent&c4=transparent&c5=145787&c6=8a216b&police=1&t_icones=13&x=335.6000061035156&y=303&d=0&id=29880406cabd5189048741950d2895e0";
-              var z = document.getElementsByTagName("script")[0]; z.parentNode.insertBefore(my, z);
-              })();
-              </script>
+<!-- WELCOME -->
+  <section id="welcome">
+    <h2>Welcome in!</h2>
+
+<!-- CARDS -->
+  <div class="cards">
+
+    <div class="card card-one">
+      <form id="to-do-list">
+        <fieldset class="list">
+          <legend>To-Do List :</legend>
+            <label>
+              <input type="checkbox" class="to-do">
+              <input type="text" id="item">
+            </label>
+            <label>
+              <input type="checkbox" class="to-do">
+              <input type="text" id="item">
+            </label>
+            <label>
+              <input type="checkbox" class="to-do">
+              <input type="text" class="item">
+            </label>
+            <label>
+              <input type="checkbox" class="to-do">
+              <input type="text" class="item">
+            </label>
+            <label>
+                <input type="checkbox" class="to-do">
+                <input type="text" class="item">
+            </label>           
+        </fieldset>
+      </form>
+    </div>
+          
+              <div class="card card-two">
+                  <!-- widget meteo -->
+                  <div id="widget_29880406cabd5189048741950d2895e0">
+                  <span id="t_29880406cabd5189048741950d2895e0">Météo Bain-de-Bretagne</span>
+                  <span id="l_29880406cabd5189048741950d2895e0"><a href="http://www.mymeteo.info/r/accueil_Cma">My-Meteo.com</a></span>
+                  <script type="text/javascript">
+                  (function() {
+                  var my = document.createElement("script"); my.type = "text/javascript"; my.async = true;
+                  my.src = "https://services.my-meteo.com/widget/js?ville=13397&format=carre&nb_jours=3&temps&horaires&hum&precip&coins&c1=5f5f5f&c2=145787&c3=transparent&c4=transparent&c5=145787&c6=8a216b&police=1&t_icones=13&x=335.6000061035156&y=303&d=0&id=29880406cabd5189048741950d2895e0";
+                  var z = document.getElementsByTagName("script")[0]; z.parentNode.insertBefore(my, z);
+                  })();
+                  </script>
+                  </div>
+                  <!-- widget meteo -->
               </div>
-              <!-- widget meteo -->
-          </div>
 
+              <div class="card card-three">Why I've learn recently ?</div>
+            </div>
+        </section>
 
-      <div class="card">Why I've learn recently ?</div>
-
-    <!-- /div cards -->
-    </div>
+<!-- /WELCOME-->
 
     <div class="divider"></div>
 
-        <div id="visitcard">
+<!-- VISITCARD -->
+        <section id="visitcard">
           <h1 class="name">Angélina Métivier</h1>
-            <img class="identity-picture" src="C:\Users\Enjee\Documents\Learning HTML\Dashboard\identity-picture.jpg"></img>
+            <img class="identity-picture" src="identity-picture.jpg"></img>
             <p class="presentation">Je suis une personne de 29 ans, en reconversion professionnelle. J'ai l'ambition de devenir codeuse.</p>
     
           <section id="contact">
@@ -115,16 +126,17 @@
                 <a class="mail" href="mailto:metivierangelina@hotmail.com">metivier.angelina@hotmail.com</a> 
               </address>
           </section>
-        </div>
+        
 
           <section class="section" id="section">
             <h1>Congratulations your email was send</h1>
             <p>Your email was send successfully</p>
           </section>
+        </section>
+<!-- /VISITCARD -->
 
     <div class="divider"></div>
-
-  </main>
- </div>
+  </div>
+</main>
 
 </body>
