@@ -149,4 +149,9 @@
         menuHamburger.addEventListener('click',()=>{
         navigation.classList.toggle('mobile-menu')
         })
+        document.querySelectorAll('.navigation a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelector('.navigation').classList.remove('mobile-menu');
+    });
+  });
 </script>
