@@ -306,6 +306,7 @@ a[class="social-media"]:hover span{
     margin:0;
     font-size: 30px;
     padding-top: 2.5rem;
+    padding-left: 30px;
   }
   .navbar .menu-hamburger{
     position: absolute;
