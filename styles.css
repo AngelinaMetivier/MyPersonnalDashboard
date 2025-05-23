@@ -304,8 +304,10 @@ a[class="social-media"]:hover span{
 } 
   .header h1{
     font-size: 25px;
-    text-align: right;
-    line-clamp: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
   }
   .navbar .menu-hamburger{
     position: absolute;
