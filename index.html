@@ -25,9 +25,8 @@
   
     <main>
 
-<!-- NAVIGATION -->
-  <div class="navigation">
-    <nav>
+ <nav class="navbar">
+    <div class="navigation">
       <ul>
         <li>
           <a id="homepage" href="#welcome"><span class="material-symbols-outlined">arrow_forward</span>Homepage</a>
@@ -42,9 +41,10 @@
           <a id="parameters" href="#"><span class="material-symbols-outlined">arrow_forward</span>... coming soon</a>
         </li>
       </ul>
-    </nav>
-  </div>
-<!-- /NAVIGATION -->
+    </div>
+    <img src="img_menu.svg" alt="menu hamburger" class="menu-hamburger">
+  </nav>
+
 
 <!-- HEADER -->
   <header>
@@ -141,3 +141,12 @@
 </main>
 
 </body>
+
+<script class="formenu">
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navigation = document.querySelector(".navigation")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navigation.classList.toggle('mobile-menu')
+        })
+</script>
