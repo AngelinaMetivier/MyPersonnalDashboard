@@ -304,14 +304,15 @@ a[class="social-media"]:hover span{
 } 
   .header h1{
     margin:0;
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding-top: 2.5rem;     
-    padding-bottom: 1rem; 
+    padding-bottom: 1rem;
+    padding-left: 25px; 
   }
   .navbar .menu-hamburger{
     position: absolute;
-    top:2rem;
-    left:2rem;
+    top:25px;
+    left:25px;
     z-index:1002;
     display:block;
   }
