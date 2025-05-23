@@ -303,7 +303,7 @@ a[class="social-media"]:hover span{
     height:6rem;      
 } 
   .header h1{
-    margin:0;
+    margin-top:-15px;
     font-size: 30px;
     padding-left: 40px;
   }
