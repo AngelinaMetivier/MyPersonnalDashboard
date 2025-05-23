@@ -303,15 +303,13 @@ a[class="social-media"]:hover span{
     height:6rem;      
 } 
   .header h1{
-    position: absolute;
-    top:0;
-    left:40px;
     font-size: 25px;
+    text-align: right;
 
   }
   .navbar .menu-hamburger{
     position: absolute;
-    top:35px;
+    top:25px;
     left:25px;
     z-index:1002;
     display:block;
