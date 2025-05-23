@@ -304,10 +304,8 @@ a[class="social-media"]:hover span{
 } 
   .header h1{
     margin:0;
-    font-size: 22px;
-    padding-top: 2.5rem;     
-    padding-bottom: 1rem;
-    padding-left: 35px; 
+    font-size: 30px;
+    padding-top: 2.5rem;
   }
   .navbar .menu-hamburger{
     position: absolute;
