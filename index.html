@@ -69,11 +69,11 @@
           <legend>To-Do List :</legend>
             <label>
               <input type="checkbox" class="to-do">
-              <input type="text" id="item">
+              <input type="text" class="item">
             </label>
             <label>
               <input type="checkbox" class="to-do">
-              <input type="text" id="item">
+              <input type="text" class="item">
             </label>
             <label>
               <input type="checkbox" class="to-do">
@@ -152,6 +152,24 @@
         document.querySelectorAll('.navigation a').forEach(link => {
     link.addEventListener('click', () => {
         document.querySelector('.navigation').classList.remove('mobile-menu');
+    });
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const items = document.querySelectorAll('.item');
+
+    // Chargement des valeurs
+    items.forEach((input, index) => {
+      const saved = localStorage.getItem('todo_' + index);
+      if (saved !== null) {
+        input.value = saved;
+      }
+
+      // Sauvegarde à chaque modification
+      input.addEventListener('input', () => {
+        localStorage.setItem('todo_' + index, input.value);
+      });
     });
   });
 </script>
