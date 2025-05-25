@@ -18,6 +18,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+  <!-- OTHER -->
+  <link rel="stylesheet" href="https://widget.meteomatics.com/v2/meteomatics-weather-widget.css" />
   
 </head> 
   
@@ -94,9 +96,18 @@
                            
 <!-- widget meteo -->
     <div class="card card-two">
+      <div
+  data-meteomatics-weather-widget="vertical"
+  data-meteomatics-weather-widget-color="light-gray"
+  data-meteomatics-weather-widget-title="35470 Bain-de-Bretagne, France"
+  data-meteomatics-weather-widget-latitude="47.841438"
+  data-meteomatics-weather-widget-longitude="-1.685223"
+  data-meteomatics-weather-widget-measurement-unit-temperature="celsius"
+>
+  <a href="https://www.meteomatics.com">Meteomatics Weather Widget</a>
+</div>
     </div>
 <!-- /widget meteo -->
-  </div>
 <!-- /end cards -->
 </section>
 <!-- /WELCOME-->
@@ -182,3 +193,4 @@
     });
   });
 </script>
+<script async src="https://widget.meteomatics.com/v2/meteomatics-weather-widget.js"></script>
