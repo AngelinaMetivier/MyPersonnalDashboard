@@ -125,6 +125,7 @@ header h1{
   align-items: center;
 }
   /*TO-DO LIST*/
+}
 #to-do-list{
   padding:0.5rem;
 }
@@ -316,7 +317,6 @@ a[class="social-media"]:hover span{
   header h1 {
     color:var(--font-main);
     font-size: 1rem;
-    text-align: right;
     padding-left:1rem;
     padding-right:5px;
     padding-top:0.5rem;
